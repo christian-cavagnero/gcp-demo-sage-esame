@@ -7,6 +7,7 @@ the Google Gen AI SDK's `generate_content` (see esercizio 09_librerie_python).
 
 from sage.integrations.llm.client import get_genai_client
 
+
 async def generate_text(prompt: str) -> str:
     client = get_genai_client()
     response = client.models.generate_content(
